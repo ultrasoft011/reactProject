@@ -2,13 +2,13 @@ import React from 'react';
 
 function App() {
   return <div>
-    <Folder />
-    <Folder />
+    <Folder name="Music"/>
+    <Folder name="Type"/>
   </div>
 }
 
-const Folder = () => {
-  return <h4> Desktop </h4>
+const Folder = (props) => {
+  return <h4>{props.name}</h4>
 }
 
 export default App;
